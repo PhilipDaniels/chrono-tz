@@ -17,10 +17,11 @@ serde = { version = "1", optional = true, default-features = false }
 [features]
 default = ["std"]
 std = []
+filter-timezones = []
 
 [build-dependencies]
 parse-zoneinfo = { version = "0.3" }
-regex = { default-features = false, version = "1"  }
+regex = { version = "1", default-features = false, optional = true }
 
 [dev-dependencies]
 serde_test = "1"
